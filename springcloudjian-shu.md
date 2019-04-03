@@ -7,9 +7,9 @@
 
 5. #### **      接下来的示例都是基于**
 
->        xxxx版本    \(后续补上\)**
->        JDK: 1.8**
->       IDE: IntelliJ IDEA**
+>    &ensp;** xxxx版本    \(后续补上\)**
+>    &ensp;** JDK: 1.8**
+>    &ensp;** IDE: IntelliJ IDEA**
 
 >> &ensp;&emsp;&nbsp; idea可以快速搭建一个springboot项目。
 
