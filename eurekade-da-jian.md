@@ -36,8 +36,3 @@
 ![](/assets/EurekaServer启动成功.png)
 
 #### 可以看到一个Eureka已经启动成功，"No instances available" 表示无client注册
-
-
-
-
-
