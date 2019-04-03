@@ -8,10 +8,14 @@
 #### **      接下来的示例都是基于**
 
 * #### **        xxxx版本    \(后续补上\)**
-* #### **        jdk: 1.8**
-* #### **        ide: IntelliJ IDEA**
+* #### **        JDK: 1.8**
+* #### **        IDE: IntelliJ IDEA**
 
-#### 
+####      idea可以快速搭建一个springboot项目。
 
+####      使用eclipse的话可以通过   [https://start.spring.io/](https://start.spring.io/)  开始一个springboot项目。
 
+####      idea其实也是通过上述网站搭建的
+
+      ![](/assets/idea搭建时所选的ServiceUrl.png)
 
