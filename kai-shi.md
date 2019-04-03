@@ -65,7 +65,7 @@ Spring Cloud CLI：基于 Spring Boot CLI，可以让你以命令行方式快速
 
 
 
-[^1]: 作为注册中心，可以选用zookeeper、consul、eruka其中一种；如果服务注册中心是eureka，注册到服务中心的服务如果不是用java写的，会麻烦些；consul用go语言实现的，可以支持多种语言；具体使用哪种作为注册中心还是由实际需要决定
+[^1]: 作为注册中心，常用选择有zookeeper、consul、eruka；如果服务注册中心是eureka，注册到服务中心的服务如果不是用java写的，会麻烦些；consul用go语言实现的，可以支持多种语言；具体使用哪种作为注册中心还是由实际需要决定，接下来的章篇再详细学习
 
 [^2]: eruka已闭源
 
