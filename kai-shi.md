@@ -18,9 +18,9 @@ Spring Cloud Config：配置管理开发工具包，可以让你把配置放到�
 
   <font color=red>Spring Cloud Netflix：针对多种Netflix组件提供的开发工具包，其中包括Eureka、Hystrix、Zuul、Archaius等。</font>
 
-  > Netflix Eureka：云端负载均衡，一个基于 REST 的服务，用于定位服务，以实现云端的负载均衡和中间层服务器的故障转移。
+  > <font color=red> Netflix Eureka：云端负载均衡，一个基于 REST 的服务，用于定位服务，以实现云端的负载均衡和中间层服务器的故障转移。</font>
   
-  > Netflix Hystrix：容错管理工具，旨在通过控制服务和第三方库的节点,从而对延迟和故障提供更强大的容错能力。
+  > <font color=red> Netflix Hystrix：容错管理工具，旨在通过控制服务和第三方库的节点,从而对延迟和故障提供更强大的容错能力。</font>
 
   > Netflix Zuul：边缘服务工具，是提供动态路由，监控，弹性，安全等的边缘服务。
 
@@ -34,7 +34,7 @@ Spring Cloud Config：配置管理开发工具包，可以让你把配置放到�
   
   Spring Cloud Security：安全工具包，为你的应用程序添加安全控制，主要是指OAuth2。
   
-  Spring Cloud Consul：封装了Consul操作，consul是一个服务发现与配置工具，与Docker容器可以无缝集成。
+  <font color=red> Spring Cloud Consul：封装了Consul操作，consul是一个服务发现与配置工具，与Docker容器可以无缝集成。</font>
 
   Spring Cloud Zookeeper：操作Zookeeper的工具包，用于使用zookeeper方式的服务注册和发现。
 
