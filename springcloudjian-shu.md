@@ -1,8 +1,8 @@
 # 简述
 
-1. #### ** 官网： **[**https://spring.io/**](https://spring.io/)
-2. #### **springcloud中文网：**[**https://springcloud.cc/**](https://springcloud.cc/)**。**
-3. #### **个人觉得翻译原因，有些词写得不大流畅，有耐心的可以配合有道词典划词功能一段段看原文，本文相关可参考学习文档：**[**https://springcloud.cc/spring-cloud-dalston.html**](https://springcloud.cc/spring-cloud-dalston.html)
+1. #### [官网](https://spring.io/)
+2. #### [springcloud中文网](https://springcloud.cc/)
+3. #### **个人觉得翻译原因，有些段落不大流畅，有耐心的可以配合有道词典划词功能一段段看原文，本文相关可参考**[**学习文档**](https://springcloud.cc/spring-cloud-dalston.html)
 4. #### **截至写此书时, springBoot 最新版为2.0版本**
 
 5. #### **      接下来的示例都是基于**
