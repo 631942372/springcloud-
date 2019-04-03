@@ -26,6 +26,23 @@
 
 ###将Eureka配置输入
 
+
+```
+server:
+   port: 8761  #端口号
+
+eureka:
+   instance:   # eureak实例定义
+       hostname: localhost     #ip
+  #eureka默认情况下,把自己当做客户端来注册自己,所以我们要禁用它,本地测试时都是关闭此两项
+   client:
+       registerWithEureka: false  #表示是否将自己注册到Eureka Server上，默认为true
+       fetchRegistry: false       #表示是否从Eureka Server上获取注册信息，默认为true
+       serviceUrl:
+           defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+```
+
+
 #### ![](/assets/Eureka基础配置.png)
 
 #### 之后还需自己在启动类加上注解@EnableEurekaServer
