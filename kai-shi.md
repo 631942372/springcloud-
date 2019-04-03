@@ -21,11 +21,11 @@ Spring Cloud Bus：事件、消息总线，用于在集群（例如，配置变�
 <font color=red>Spring Cloud Netflix：针对多种Netflix组件提供的开发工具包，其中包括Eureka、Hystrix、Zuul、Archaius等。</font>  
 
 
-> <font color=red> Netflix Eureka：云端负载均衡，一个基于 REST 的服务，用于定位服务，以实现云端的负载均衡和中间层服务器的故障转移。
+> <font color=red> Netflix Eureka：云端负载均衡，一个基于 REST 的服务，用于定位服务，以实现云端的负载均衡和中间层服务器的故障转移。</font>  
+ </br>
 
 
-
-> Netflix Hystrix：容错管理工具，旨在通过控制服务和第三方库的节点,从而对延迟和故障提供更强大的容错能力。</font>  
+> <font color=red>Netflix Hystrix：容错管理工具，旨在通过控制服务和第三方库的节点,从而对延迟和故障提供更强大的容错能力。</font>  
 
 
 > Netflix Zuul：边缘服务工具，是提供动态路由，监控，弹性，安全等的边缘服务。  
