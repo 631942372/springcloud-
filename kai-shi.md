@@ -44,7 +44,7 @@ Spring Cloud CLI：基于 Spring Boot CLI，可以让你以命令行方式快速
 
 此次学习主要关注
 
-**服务发现——Netflix Eureka**
+**服务发现——Netflix Eureka**[^2]
 
 **服务网关——Netflix Zuul**
 
@@ -56,6 +56,12 @@ Spring Cloud CLI：基于 Spring Boot CLI，可以让你以命令行方式快速
 > **客服端负载均衡——Netflix Ribbon**
 >
 > **断路器——Netflix Hystrix**
+
+```
+
+```
+
+
 
 
 
