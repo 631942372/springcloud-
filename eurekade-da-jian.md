@@ -96,7 +96,8 @@ eureka:
 
 ##### ![](/assets/EurekaServer启动类注解.png)
 
-##### 启动，在浏览器输入localhost:8761，可以看到Eureka已经启动成功,"No instances available" 表示无client注册
+##### 启动，在浏览器输入localhost:8761，可以看到EurekaServer已经启动成功。
+##### "No instances available" 表示无client注册
 
 
 
