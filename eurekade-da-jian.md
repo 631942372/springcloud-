@@ -53,10 +53,14 @@ eureka:
 
 ![](/assets/简易搭建eurekaServer_pom.png)
 
-##### 此处使用的版本是2.1.3,1.x版本跟2.x版本的区别是eureka的包是没有starter-netflix的。 1.x使用
+##### 此处使用的版本是2.1.3 。
+
+##### 1.x版本跟2.x版本的区别是eureka的包是没有starter-netflix的。 
+
+##### 1.x使用↓
 
 ```
-<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+<artifactId>spring-cloud-eureka-server</artifactId>
 ```
 
 
