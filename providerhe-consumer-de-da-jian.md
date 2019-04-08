@@ -179,3 +179,26 @@ eureka:
 
 如果选用的注册中心是eureka，那么就推荐@EnableEurekaClient，如果是其他的注册中心，那么推荐使用@EnableDiscoveryClient。
 
+
+
+服务提供方创建controller，提供接口
+
+```
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+
+public class HelloController {
+
+    @RequestMapping("/hello")
+    public String Hello(){
+        return "Hello,I am provider";
+    }
+}
+```
+
+这里需要注意一个问题，创建的包需要跟启动类同级，否则会扫描不到
+
+![](/assets/包同级.png)
+
