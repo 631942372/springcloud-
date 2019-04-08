@@ -173,5 +173,9 @@ eureka:
     preferIpAddress: true
 ```
 
-都在启动类上加上 @EnableEurekaClient
+都在启动类上加上 @EnableEurekaClient或@EnableDiscoveryClient
+
+@EnableDiscoveryClient基于spring-cloud-commons, @EnableEurekaClient基于spring-cloud-netflix。
+
+如果选用的注册中心是eureka，那么就推荐@EnableEurekaClient，如果是其他的注册中心，那么推荐使用@EnableDiscoveryClient。
 
