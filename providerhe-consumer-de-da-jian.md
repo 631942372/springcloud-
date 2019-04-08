@@ -1,6 +1,6 @@
-有了注册中心，接下来搭建服务消费方和服务提供方
+#### **有了注册中心，接下来搭建服务消费方和服务提供方**
 
-消费者pom
+#### **消费者pom**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -66,7 +66,7 @@
 </project>
 ```
 
-消费者application.yml
+#### 消费者application.yml
 
 ```
 server:
@@ -82,7 +82,7 @@ eureka:
     register-with-eureka: true    #将服务注册到eureka
 ```
 
-服务提供方pom
+#### 服务提供方pom
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -155,7 +155,7 @@ eureka:
 </project>
 ```
 
-服务提供方application.yml
+#### 服务提供方application.yml
 
 ```
 server:
@@ -179,8 +179,6 @@ eureka:
 
 如果选用的注册中心是eureka，那么就推荐@EnableEurekaClient，如果是其他的注册中心，那么推荐使用@EnableDiscoveryClient。
 
-
-
 服务提供方创建controller，提供接口
 
 ```
@@ -198,7 +196,9 @@ public class HelloController {
 }
 ```
 
-这里需要注意一个问题，创建的包需要跟启动类同级，否则会扫描不到
+#### 这里需要注意一个问题，创建的包需要跟启动类同级，否则会扫描不到
 
 ![](/assets/包同级.png)
+
+访问xxxx/hello/hello 成功
 
