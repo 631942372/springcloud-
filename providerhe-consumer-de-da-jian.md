@@ -169,8 +169,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     fetch-registry: true          #检索服务
     register-with-eureka: true    #将服务注册到eureka
-  instance:
-    preferIpAddress: true
+ # instance:
+   # preferIpAddress: true
 ```
 
 都在启动类上加上 @EnableEurekaClient或@EnableDiscoveryClient
