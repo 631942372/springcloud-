@@ -105,7 +105,6 @@ public class ConsumerApplication {
         return new RestTemplate();
     }
 }
-
 ```
 
 消费者controller
@@ -136,8 +135,7 @@ public class ConsumerController {
         return "consumer call provider ,result: "+str;
     }
 }
-
 ```
 
-
+修改provider的端口，启动，调用[http://xxxxxx/consumer/callProvider](http://zhouxiayu:8701/consumer/callProvider)   可以看到端口轮询切换
 
