@@ -137,5 +137,5 @@ public class ConsumerController {
 }
 ```
 
-修改provider的端口，启动，调用[http://xxxxxx/consumer/callProvider](http://zhouxiayu:8701/consumer/callProvider)   可以看到端口轮询切换
+修改provider的启动项端口，启动，调用[http://xxxxxx/consumer/callProvider](http://zhouxiayu:8701/consumer/callProvider)   可以看到端口轮询切换
 

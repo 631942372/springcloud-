@@ -119,6 +119,14 @@ public class ProviderController {
 }
 ```
 
+#### ![](/assets/idea单例启动.png)
+
+#### 关闭Idea单例启动
+
+#### --spring.profiles.active=server1，添加配置项，接下来需要启动多台服务
+
+
+
 #### 这里需要注意一个问题，创建的包需要跟启动类同级，否则会扫描不到
 
 ![](/assets/包同级.png)
