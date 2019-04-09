@@ -6,5 +6,6 @@
   * [关于springcloud](guan-yu-springcloud.md)
   * [Eureka](eureka.md)
     * [EurekaServer的搭建](eurekaserverde-da-jian.md)
-    * [provider和consumer的搭建](providerhe-consumer-de-da-jian.md)
+    * [provider的搭建](provider-de-da-jian.md)
+    * [consumer的搭建](consumerde-da-jian.md)
 

@@ -1,86 +1,4 @@
-#### **有了注册中心，接下来搭建服务消费方和服务提供方**
-
-#### **消费者pom**
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.zxy</groupId>
-    <artifactId>consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>consumer</name>
-    <description>消费者</description>
-
-    <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
-</project>
-```
-
-#### 消费者application.yml
-
-```
-server:
-    port: 8701
-spring:
-    application:
-        name: consumer # 服务别名
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:8761/eureka/
-    fetch-registry: true          #检索服务
-    register-with-eureka: true    #将服务注册到eureka
-```
+#### **有了注册中心，接下来搭建服务提供方**和**服务消费方**
 
 #### 服务提供方pom
 
@@ -173,13 +91,13 @@ eureka:
    # preferIpAddress: true
 ```
 
-都在启动类上加上 @EnableEurekaClient或@EnableDiscoveryClient
+在启动类上加上 @EnableEurekaClient或@EnableDiscoveryClient
 
 @EnableDiscoveryClient基于spring-cloud-commons, @EnableEurekaClient基于spring-cloud-netflix。
 
 如果选用的注册中心是eureka，那么就推荐@EnableEurekaClient，如果是其他的注册中心，那么推荐使用@EnableDiscoveryClient。
 
-服务提供方创建controller，提供接口
+服务提供方创建api，提供接口
 
 ```
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -200,5 +118,7 @@ public class HelloController {
 
 ![](/assets/包同级.png)
 
-访问xxxx/hello/hello 成功
+#### 访问xxxx/hello/hello 成功
+
+
 
