@@ -11,8 +11,6 @@
 
 #### 因为是在consumer调用provider的服务，因此我们在consumer项目启动类加上@EnableFeignClients开启feign
 
-
-
 #### consumer项目创建feign接口
 
 ```
@@ -31,13 +29,11 @@ public interface ProviderFeignService {
     @GetMapping(value = "/provider/{message}")//,method = RequestMethod.GET
     String HelloPathFeign(@PathVariable("message")String message);
 }
-
 ```
 
 #### 新增provider项目controller调用feign接口
 
 ```
-
 import com.zxy.consumer.feign.ProviderFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -110,11 +106,19 @@ public class ProviderController {
 }
 ```
 
-启动项目，部署集群，可以发现调用接口时，调用端口号在改变，说明feign整合的ribbin起了负载均衡作用
+#### 启动项目，部署集群，可以发现调用接口时，调用端口号在改变，说明feign整合的ribbin起了负载均衡作用
 
-调用consumer接口 
+#### 编写feign接口时可以发现feign对于参数接受是需要比较注意的
+
+>#### **1.如果使用url传参,加注解@PathVariable,不能传递对象,只能用作传递基本数值;**
+
+>#### **2.如果使用get请求传递参数,同样不能传递对象,而且如果传递参数的话,需要用到@RequestParam标注名称**
+
+>#### **3.传递对象请使用post方式,并且接收端使用@RequestBody注解**
+
+#### 调用consumer接口
 
 [http://localhost:8701/consumer/helloFeign](http://localhost:8701/consumer/helloFeign)
 
-[http://localhost:8701/consumer/11231](http://localhost:8701/consumer/11231)
+[http://localhost:8701/consumer/xxxx](http://localhost:8701/consumer/11231)
 
