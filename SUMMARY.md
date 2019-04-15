@@ -8,4 +8,7 @@
     * [EurekaServer的搭建](eurekaserverde-da-jian.md)
     * [provider的搭建](provider-de-da-jian.md)
     * [consumer的搭建](consumerde-da-jian.md)
+  * [Feign](feign.md)
+
+
 
