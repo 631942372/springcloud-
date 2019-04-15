@@ -110,11 +110,15 @@ public class ProviderController {
 
 #### 编写feign接口时可以发现feign对于参数接受是需要比较注意的
 
->#### **1.如果使用url传参,加注解@PathVariable,不能传递对象,只能用作传递基本数值;**
+> #### **1.如果使用url传参,加注解@PathVariable,不能传递对象,只能用作传递基本数值;**
+>
+> #### **2.如果使用get请求传递参数,同样不能传递对象,而且如果传递参数的话,需要用到@RequestParam标注名称**
+>
+> #### **3.传递对象请使用post方式,并且接收端使用@RequestBody注解**
 
->#### **2.如果使用get请求传递参数,同样不能传递对象,而且如果传递参数的话,需要用到@RequestParam标注名称**
+#### 
 
->#### **3.传递对象请使用post方式,并且接收端使用@RequestBody注解**
+
 
 #### 调用consumer接口
 
