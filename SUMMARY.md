@@ -10,4 +10,5 @@
     * [consumer的搭建](consumerde-da-jian.md)
   * [Feign](feign.md)
   * [Feign使用hystrix](fu-wu-jiang-ji.md)
+  * [zuul的构建](zuulde-gou-jian.md)
 
